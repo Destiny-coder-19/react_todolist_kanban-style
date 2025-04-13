@@ -1,0 +1,86 @@
+.board-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: anchor-center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+input[type="text"] {
+  padding: 10px;
+  width: 300px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+button.add-btn {
+  padding: 10px 16px;
+  margin-left: 8px;
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button.add-btn:hover {
+  background-color: #45a049;
+}
+
+.card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.lane.drag-over {
+  background-color: rgba(0, 0, 255, 0.1);
+  border: 2px dashed #007bff;
+}
+
+.text-green {
+  background: rgb(143, 238, 143);
+  width: 30px;
+  height: 33px;
+  border: none;
+  padding: 8px;
+  border-radius: 4px;
+  margin: 16px;
+}
+
+.text-red {
+  background: rgb(214, 74, 74);
+  color: white;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 4px;
+  margin: 16px;
+}
+
+
+@media (max-width: 768px) {
+  .board-container {
+    grid-template-columns: 1fr;
+  }
+}
